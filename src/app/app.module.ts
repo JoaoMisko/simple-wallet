@@ -21,6 +21,7 @@ import { OptionsPage } from '../pages/options/options';
 import { Ingresso1Page } from '../pages/ingresso1/ingresso1';
 import { FormCardPage } from '../pages/form-card/form-card';
 import { Options2Page } from '../pages/options2/options2';
+import { OkPage } from '../pages/ok/ok';
 
 
 
@@ -46,7 +47,8 @@ import { PaymentProvider } from '../providers/payment/payment';
     OptionsPage,
     Ingresso1Page,
     FormCardPage,
-    Options2Page
+    Options2Page,
+    OkPage
   ],
   imports: [
     BrowserModule,
@@ -71,7 +73,8 @@ import { PaymentProvider } from '../providers/payment/payment';
     OptionsPage,
     Ingresso1Page,
     FormCardPage,
-    Options2Page
+    Options2Page,
+    OkPage
   ],
   providers: [
     StatusBar,

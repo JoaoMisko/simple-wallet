@@ -5,6 +5,7 @@ import 'rxjs/add/operator/map';
 import { PaymentProvider } from './../../providers/payment/payment';
 import { Ingresso1Page } from '../ingresso1/ingresso1';
 import { FormCardPage } from '../form-card/form-card';
+import { OkPage } from '../ok/ok';
 
 /**
  * Generated class for the OptionsPage page.
@@ -28,6 +29,8 @@ export class OptionsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, private toast: ToastController,
     private paymentProvider: PaymentProvider, public alertCtrl: AlertController) {
 
+    
+
       if (this.pay == null){
         this.disableBtn =true;
       }
@@ -40,6 +43,10 @@ export class OptionsPage {
       this.model.card_holder_name = 'Aardvark Silva';
       this.model.amount= 15000;
   }
+
+  Buy() {
+      this.navCtrl.push(OkPage);
+    }
 
   func(pay){
     if (pay != null || pay != "")
